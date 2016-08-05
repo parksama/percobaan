@@ -64,6 +64,14 @@ body * {
   position: relative;
   z-index: 2;
 }
+.container .lyric {
+  transition: all 20s linear;
+  max-height: 0px;
+  overflow: hidden;
+}
+.container .lyric.show {
+  max-height: 150px;
+}
 .logo {
   width: 7em;
   height: auto;
@@ -90,7 +98,7 @@ h2 {
 .countdown,
 .is-countdown {
   font-size: 2em;
-  margin-top: 1em;
+  margin-top: 0.25em;
   font-family: 'VT323';
 }
 .countdown-holding span {
