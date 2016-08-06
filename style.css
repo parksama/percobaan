@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=VT323');
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
 html,
 body {
   width: 100%;
@@ -29,6 +29,18 @@ body * {
   margin-left: -0.3em;
   vertical-align: middle;
 }
+.container:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('dots.png');
+  background-size: 4em;
+  opacity: 0.25;
+  z-index: 1;
+}
 .container #theapt {
   position: absolute;
   top: 0;
@@ -50,10 +62,10 @@ body * {
   transform: scale(1.7);
 }
 .container .bg-video.reveal {
-  opacity: 0.1;
+  opacity: 1;
 }
 .container .vertical-center {
-  font-family: 'VT323';
+  font-family: 'Oleo Script';
   display: inline-block;
   vertical-align: middle;
   width: 1024px;
@@ -99,7 +111,7 @@ h2 {
 .is-countdown {
   font-size: 2em;
   margin-top: 0.25em;
-  font-family: 'VT323';
+  font-family: 'Oleo Script';
 }
 .countdown-holding span {
   color: #888;
